@@ -12,6 +12,7 @@ import { ResetPassComponent } from './pages/reset-pass/reset-pass.component';
 import { ShowsComponent } from './pages/shows/shows.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path:'shows',component:ShowsComponent},
   {path:'forgot-pass',component:ForgotPassComponent},
   {path:'reset-pass',component:ResetPassComponent},
+  {path:'profile',component:UserProfileComponent},
   {path:'**',component:NotFoundComponent},
 ];
 

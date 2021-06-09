@@ -6,4 +6,74 @@
   min-height: 50vh;
   margin: 0 auto;
   background-color: #f1f1f1;
+  .cart-container{
+    width: calc(100% - 10vw);
+    display: flex;
+    margin: 0  auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1rem;
+    .row{
+
+      .img-box{
+        object-fit: cover;
+        border-radius: 6px;
+
+        cursor: pointer;
+        img{
+          border-radius: 6px;
+          width: 100%;
+        }
+      }
+      .show-description,
+      .show-details,
+      .show-actions-btn{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .show-details{
+
+        p{
+          margin-top: 2rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          .quantity{
+            border: 1px solid $btn-warning;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+          }
+        }
+
+      }
+      .show-actions-btn {
+        button{
+          padding: 0.5rem 0;
+          margin-top: 2rem;
+
+        }
+      }
+      .show-description{
+        .price{
+          .ticket-price{
+            background-color: $primary-btn-color;
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            color: #fff;
+          }
+          i{
+            color: $primary-btn-color;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -18,16 +18,10 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/program" routerLinkActive="active">Programmes</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="/shows" routerLinkActive="active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/shows" routerLinkActive="active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Spectacles
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Pièces de théâtre</a></li>
-              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Chorégraphie & danse</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Autres</a></li>
-            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link " routerLink="/abonnement" routerLinkActive="active" >Abonnements</a>
@@ -47,6 +41,14 @@
             </i>
 
             </a>
+          </li>
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" routerLink="/profile" routerLinkActive="active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Se déconnecter</a></li>
+            </ul>
           </li>
         </ul>
         <form class="d-flex" id="search-form">

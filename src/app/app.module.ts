@@ -20,6 +20,7 @@ import { ForgotPassComponent } from './pages/forgot-pass/forgot-pass.component';
 import { ResetPassComponent } from './pages/reset-pass/reset-pass.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { CartItemComponent } from './shared/components/cart-item/cart-item.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CartItemComponent } from './shared/components/cart-item/cart-item.compo
     ForgotPassComponent,
     ResetPassComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

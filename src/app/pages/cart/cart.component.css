@@ -25,4 +25,88 @@ li {
   margin: 0 auto;
   background-color: #f1f1f1;
 }
+
+.container .cart-container {
+  width: calc(100% - 10vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0  auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.container .cart-container .row .img-box {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container .cart-container .row .img-box img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.container .cart-container .row .show-description,
+.container .cart-container .row .show-details,
+.container .cart-container .row .show-actions-btn {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.container .cart-container .row .show-details p {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .cart-container .row .show-details p .quantity {
+  border: 1px solid #ffc107;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.container .cart-container .row .show-actions-btn button {
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+}
+
+.container .cart-container .row .show-description .price .ticket-price {
+  background-color: #C51800;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.container .cart-container .row .show-description .price i {
+  color: #C51800;
+  margin: 0 0.5rem;
+}
 /*# sourceMappingURL=cart.component.css.map */

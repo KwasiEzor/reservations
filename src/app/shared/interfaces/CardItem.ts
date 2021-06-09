@@ -5,5 +5,6 @@ export class CardItem{
   content!:string;
   date?:string;
   price?:string;
+  bookable:boolean;
   places?:number;
 }

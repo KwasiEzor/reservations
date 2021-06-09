@@ -1,5 +1,31 @@
 
 <div class="container">
   <app-heading-title [title]="newTitle"></app-heading-title>
+  <div class="cart-container" *ngFor="let cartItem of cardList; let i=index">
+    <div class="row">
+      <div class="col-md-3 img-box">
+        <img src={{cartItem.image}} alt="image spectacle">
+      </div>
+      <div class="col-md-3 show-description">
+          <h5>{{cartItem.title}}</h5>
+          <small class="text-muted">{{cartItem.date | date}}</small>
+          <h5 class="price"><i class="fas fa-ticket-alt"></i> <span class="ticket-price">{{cartItem.price}}€</span> </h5>
+      </div>
+      <div class="col-md-3 show-details">
+        <p>
+          <button type="button" class="btn btn-outline-dark btn-minus py-1 px-2"><i class="fas fa-minus"></i></button>
+          <span class="quantity">2</span>
+          <button type="button" class="btn btn-outline-dark add-btn py-1 px-2"><i class="fas fa-plus"></i></button>
+        </p>
+      </div>
+      <div class="col-md-3 show-actions-btn">
+        <h2 class="price-total text-center">Total : <span class="total"> 40€</span></h2>
+        <button type="button" class="btn btn-warning">
+          Supprimer
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
