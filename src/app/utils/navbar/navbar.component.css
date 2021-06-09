@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#search-btn {
+  background-color: #C51800;
+  color: #fff;
+  padding: 0.25rem 1rem;
+}
+
+#search-form .input-group .form-control {
+  padding: 0.25rem 0.5rem;
+}
+
+nav {
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+nav ul {
+  z-index: 100;
+  background-color: #fff;
+}
+
+nav ul #home-link {
+  color: #C51800;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 0.25rem 0.5rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.fa-shopping-cart {
+  color: #C51800;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  background-color: #ffc107;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  top: -16px;
+  color: #111;
+  font-weight: bold;
+}
+
+.routerLinkActive {
+  color: #C51800;
+}
+
+.active {
+  position: relative;
+  padding-bottom: 0.7rem;
+  color: #C51800;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 4px;
+  background-color: #C51800;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0.5rem;
+  }
+  nav ul li .fa-shopping-cart {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=navbar.component.css.map */

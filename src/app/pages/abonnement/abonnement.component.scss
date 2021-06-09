@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+.container{
+  box-shadow: 0 0 6px rgba(167, 166, 166, 0.4);
+  padding: 1rem;
+  height: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .abonnement-container{
+    margin-top: 2rem;
+    width: 90%;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    justify-content: space-evenly;
+    .card{
+      margin:  1rem;
+      height: 30rem;
+      .card-body{
+        display: flex;
+        flex-direction: column;
+        ul{
+          li{
+            margin: 1rem 0;
+            text-align: center;
+          }
+        }
+        h1{
+          text-align: center;
+          margin: 1rem 0;
+          color: $primary-btn-color;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+    #card-1{
+      object-fit: cover;
+      img{
+        height: 100%;
+      }
+    }
+
+  }
+}

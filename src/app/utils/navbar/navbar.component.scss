@@ -1,0 +1,90 @@
+@import '../../../styles.scss';
+
+#search-btn{
+  background-color: $primary-btn-color;
+  color: $white-color;
+  padding: 0.25rem 1rem;
+}
+#search-form{
+  .input-group{
+    .form-control{
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+nav{
+  height: 5rem;
+  padding: 0 1rem;
+  ul{
+    z-index: 100;
+    background-color: #fff;
+    #home-link{
+      color: $primary-btn-color;
+      font-weight: bold;
+    }
+    li{
+      padding: 0.25rem 0.5rem;
+      a{
+        font-weight: bold;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.fa-shopping-cart{
+  color: $primary-btn-color;
+  position: relative;
+}
+.badge{
+  position: absolute;
+  background-color: $btn-warning;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  top: -16px;
+  color: #111;
+  font-weight: bold;
+}
+.routerLinkActive{
+  color: $primary-btn-color;
+}
+.active{
+  position: relative;
+  padding-bottom: 0.7rem;
+  color: $primary-btn-color;
+  font-weight: bold;
+  opacity: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    background-color: $primary-btn-color;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 350ms ease;
+    transform: translateX(30%);
+
+  }
+}
+@media screen and(max-width:768px) {
+  nav{
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        .fa-shopping-cart{
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

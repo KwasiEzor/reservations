@@ -1,0 +1,65 @@
+  <!-- navigation  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 999;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">
+          <img src="assets/img/logo-reservations.svg" style="width: 200px;" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" id="home-link" aria-current="page" routerLink="/home"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/program" routerLinkActive="active">Programmes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="/shows" routerLinkActive="active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Spectacles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Pièces de théâtre</a></li>
+              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Chorégraphie & danse</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" routerLink="#" routerLinkActive="active">Autres</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/abonnement" routerLinkActive="active" >Abonnements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/contact" routerLinkActive="active" >Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/signup" routerLinkActive="active" >S'inscrire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/signin" routerLinkActive="active" >Se connecter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="/cart" routerLinkActive="active" ><i class="fas fa-shopping-cart">
+              <span class="badge badge-warning">2</span>
+            </i>
+
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex" id="search-form">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <div class="input-group ">
+            <input type="text" class="form-control" placeholder="Entrez un mot clé..." aria-label="Entrez un mot clé..." aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-outline" id="search-btn" >Chercher</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end navigation  -->

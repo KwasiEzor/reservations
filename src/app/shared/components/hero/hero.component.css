@@ -1,0 +1,85 @@
+#hero-section {
+  z-index: 1;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: url("../../../../assets/img/img-2.png") no-repeat center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  animation: animate 30s ease-in-out infinite alternate-reverse forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+#hero-section .hero-section-content {
+  text-align: center;
+  color: #fff;
+}
+
+#hero-section .hero-section-content h1 {
+  font-size: 3rem;
+}
+
+#hero-section .hero-section-content h1, #hero-section .hero-section-content h3 {
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+#hero-section .hero-section-content button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background: url("../../../../assets/img/img-1.png") no-repeat center;
+    background-size: cover;
+  }
+  25% {
+    background: url("../../../../assets/img/img-3.png") no-repeat center;
+    background-size: cover;
+  }
+  50% {
+    background: url("../../../../assets/img/img-4.png");
+    background-size: cover;
+  }
+  75% {
+    background: url("../../../../assets/img/img-5.png") no-repeat center;
+    background-size: cover;
+  }
+  100% {
+    background: url("../../../../assets/img/img-2.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background: url("../../../../assets/img/img-1.png") no-repeat center;
+    background-size: cover;
+  }
+  25% {
+    background: url("../../../../assets/img/img-3.png") no-repeat center;
+    background-size: cover;
+  }
+  50% {
+    background: url("../../../../assets/img/img-4.png");
+    background-size: cover;
+  }
+  75% {
+    background: url("../../../../assets/img/img-5.png") no-repeat center;
+    background-size: cover;
+  }
+  100% {
+    background: url("../../../../assets/img/img-2.png") no-repeat center;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=hero.component.css.map */

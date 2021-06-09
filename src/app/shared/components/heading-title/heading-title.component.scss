@@ -1,0 +1,14 @@
+@import '../../../../styles.scss';
+
+h1{
+  font-family: $font-title;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: $primary-btn-color;
+  img{
+    margin-left: 0.5rem;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../../styles.scss';
+.container{
+  box-shadow: 0 0 6px rgba(167, 166, 166, 0.4);
+  padding: 1rem;
+  height: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  .signup-container{
+    width: 30rem;
+    max-width: 100%;
+    min-width: calc(100% -20px);
+    margin: 1rem auto;
+
+    border: 1px solid rgb(227, 227, 227);
+    form{
+      width: 100%;
+      background-color: #fff;
+      padding: 2rem;
+      label{
+        margin: 0.5rem 0;
+      }
+      label,input{
+        width: 100%;
+      }
+      input{
+        padding: 0.5rem 1rem;
+        &::placeholder{
+          color: #cac7c7;
+        }
+        &:focus{
+          outline: none;
+          border-color:#ffc107 ;
+        }
+      }
+      #btn-submit{
+        width: 100%;
+        padding: 1rem 2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+      }
+      .text-center{
+        font-size: 12px;
+        a:hover{
+          transition: 350ms ease;
+          color: $primary-btn-color;
+        }
+      }
+
+    }
+
+  }
+}
