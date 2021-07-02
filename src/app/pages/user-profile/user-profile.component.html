@@ -1,7 +1,20 @@
 <div class="container">
   <app-heading-title [title]="newTitle"></app-heading-title>
   <div class="user-container">
-    <p>user-profile works!</p>
-
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/user-profile">Mon Compte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user-abonnement">Abonnements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user-shows">Spectacles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user-edit" tabindex="-1" >Modifier Profil</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
   </div>
 </div>

@@ -45,9 +45,13 @@ li {
 }
 
 .container .row .card .card.footer {
-  width: 5rem;
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
+  width: auto;
+  border: none;
+}
+
+.container .row .card .card.footer .btn-details {
+  width: 10rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=home.component.css.map */

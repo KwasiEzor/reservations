@@ -7,10 +7,28 @@
   margin: 0 auto;
   background-color: #f1f1f1;
   .user-container{
-    width: calc(100% - 10vw);
+    width: calc(100% - 2vw);
     margin: 0 auto;
     background-color: #fff;
+    padding-top: 1rem;
     height: 100vh;
     margin-bottom: 2rem;
+    .nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li{
+        padding: 0.7rem 1.2rem;
+      }
+    }
   }
 }
+
+
+#profile-img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+

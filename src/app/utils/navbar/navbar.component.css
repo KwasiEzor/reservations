@@ -103,7 +103,7 @@ nav ul li a {
           transform: translateX(30%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
   nav ul li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,5 +123,15 @@ nav ul li a {
   nav ul li .fa-shopping-cart {
     margin-bottom: 1rem;
   }
+}
+
+.header_change {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  overflow: hidden;
 }
 /*# sourceMappingURL=navbar.component.css.map */

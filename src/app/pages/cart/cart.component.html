@@ -4,7 +4,7 @@
   <div class="cart-container" *ngFor="let cartItem of cardList; let i=index">
     <div class="row">
       <div class="col-md-3 img-box">
-        <img src={{cartItem.image}} alt="image spectacle">
+        <img class="img-thumbnail" src={{cartItem.image}} alt="image spectacle">
       </div>
       <div class="col-md-3 show-description">
           <h5>{{cartItem.title}}</h5>

@@ -6,4 +6,9 @@
   min-height: 50vh;
   margin: 0 auto;
   background-color: #f1f1f1;
+  .program-container{
+    width: calc(100% - 10vw);
+    margin: 0 auto;
+    background-color: #fff;
+  }
 }

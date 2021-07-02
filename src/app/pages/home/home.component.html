@@ -1,15 +1,15 @@
 <div class="container">
   <app-heading-title></app-heading-title>
   <div class="card-list">
-    <div class="row row-cols-2 " *ngFor="let card of cardList; let i=index"  >
+    <div class="row  d-md-flex flex-wrap"   >
       <!-- Card item  -->
-      <div class="col-md-12 col-sm-12 ">
-        <div class="card mb-3" >
+      <div class="col-md-12 col-lg-6" *ngFor="let card of cardList; let i=index" >
+        <div class="card mb-3 " >
           <div class="row no-gutters">
-            <div class="col">
-              <img src={{card.image}} class="card-img" alt=" tête d'affiche">
+            <div class="col-md-6 col-lg-6 col-xl-6">
+              <img src={{card.image}} class="card-img img-fluid rounded" alt=" tête d'affiche">
             </div>
-            <div class="col px-2 py-1">
+            <div class="col-md-6 col-lg-6 px-2 col-xl-6 py-1">
               <div class="card-body p-3">
                 <h5 class="card-title pb-2">{{card.title}} </h5>
                 <p class="card-text">
