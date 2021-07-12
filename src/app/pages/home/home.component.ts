@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-
+import { formatDate } from '@angular/common';
+import { Component, OnInit,Pipe,PipeTransform,ViewEncapsulation } from '@angular/core';
+import { LOCALE_ID, Inject } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  encapsulation:ViewEncapsulation.None
 })
+
 export class HomeComponent implements OnInit {
+  public width = "20rem"
   public cardList:any=[
     {
       id:"1",
@@ -70,10 +74,13 @@ export class HomeComponent implements OnInit {
 
   ]
 
-  constructor() { }
+  constructor(@Inject(LOCALE_ID) public locale:string) { }
 
   ngOnInit(): void {
     console.log(this.cardList)
   }
 
+}
+export class NgbdAccordionHeader {
+  disabled = false;
 }

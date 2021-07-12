@@ -12,23 +12,13 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-
-
-    .card{
-      height: auto;
-      position: relative;
-      .card.footer{
-        width: auto;
-        border: none;
-        // margin-bottom: 0.5rem;
-        // position: absolute;
-        // right: 5%;
-        // bottom: 5%;
-        .btn-details{
-          width: 10rem;
-          align-self: flex-end;
-        }
-      }
-    }
   }
+}
+.accordion-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-date{
+  margin-right: 2rem;
 }

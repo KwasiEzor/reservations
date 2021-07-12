@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
+import localeFrExtra from '@angular/common/locales/extra/fr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -21,7 +24,14 @@ import { ResetPassComponent } from './pages/reset-pass/reset-pass.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { CartItemComponent } from './shared/components/cart-item/cart-item.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './shared/components/carousel/carousel.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShowService } from './shared/services/show.service';
+import { ArtistService } from './shared/services/artist.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,13 +52,22 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
     ResetPassComponent,
     CartComponent,
     CartItemComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: LOCALE_ID, useValue: 'fr-FR' },
+    ShowService,
+    ArtistService,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

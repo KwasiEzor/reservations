@@ -1,4 +1,37 @@
 <div class="container">
-
   <app-heading-title [title]="newTitle"></app-heading-title>
+  <form>
+    <div class="form-group form-inline">
+      Full text search:
+      <input class="form-control ml-2" type="text" [formControl]="filter" />
+    </div>
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titre</th>
+        <th scope="col">Slug</th>
+        <th scope="col">Description</th>
+        <th scope="col">Lieu</th>
+        <th scope="col">Réservable</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let show of showList; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          <img
+            [src]="'http://unsplash.it/100/100?random&gravity=center'"
+            class="mr-2"
+            style="width: 100px"
+          />
+        </td>
+        <td>{{ show.slug }}</td>
+        <td>{{ show.description }}</td>
+        <td>{{ show.locations["designation"] }}</td>
+        <td>{{ show.bookable }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

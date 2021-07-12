@@ -3,33 +3,33 @@
   <div class="card-list">
     <div class="row  d-md-flex flex-wrap"   >
       <!-- Card item  -->
-      <div class="col-md-12 col-lg-6" *ngFor="let card of cardList; let i=index" >
-        <div class="card mb-3 " >
-          <div class="row no-gutters">
-            <div class="col-md-6 col-lg-6 col-xl-6">
-              <img src={{card.image}} class="card-img img-fluid rounded" alt=" tête d'affiche">
+
+     <!-- Accordion Bootstrap  -->
+     <ngb-accordion #a="ngbAccordion" *ngFor="let card of cardList; let index" class="col-md-6 mb-5" >
+      <ngb-panel id="index">
+        <ng-template ngbPanelHeader let-opened="opened">
+          <div class="d-flex align-items-center flex-column justify-content-around">
+            <h5 class="my-3">{{card.title}}</h5>
+            <div class="img-thumbnail">
+              <img src={{card.image}} alt=" image" width="100%">
             </div>
-            <div class="col-md-6 col-lg-6 px-2 col-xl-6 py-1">
-              <div class="card-body p-3">
-                <h5 class="card-title pb-2">{{card.title}} </h5>
-                <p class="card-text">
-                  {{card.content}}
-                </p>
-                <p class="card-text pb-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-              <div class="card footer">
-                <button type="button" class="btn btn-sm btn-warning btn-details">Details</button>
-              </div>
+            <div  class="accordion-footer mt-3 ">
+              <h6 class="card-date mr-3">Date: <span class="text-danger ">{{card.date | date:'EE/MM/YY':'fullDate':'fr-FR'}}</span></h6>
+              <button ngbPanelToggle class="btn btn-warning px-2 py-1 ml-4">En savoir plus</button>
             </div>
           </div>
-        </div>
-         <!-- Modal  -->
-         <!--End modal  -->
-
-        </div>
-        <!--End card item  -->
-
-
-    </div>
+        </ng-template>
+        <ng-template ngbPanelContent>
+          <!-- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+          aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+          sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+          craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+          labore sustainable VHS. -->
+          {{card.content}}
+        </ng-template>
+      </ngb-panel>
+     </ngb-accordion>
+     <!-- End Accordion Bootstrap  -->
   </div>
 </div>
